@@ -61,7 +61,7 @@ To view this project locally, follow these steps:
 
 1. **Clone the repository (if applicable)**: If this project is part of a larger repository, clone it using Git.
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/jalil7860/Sabroso.git>
    cd <project-directory>
    ```
    *(Note: If this is a standalone project, simply download the `index.html`, `style.css`, and `Assets` folder.)*
@@ -76,7 +76,8 @@ This project is a static front-end website. You can navigate through the differe
 
 For any inquiries, please contact:
 
-- **Email**: info@sabroso.com.pk
+- **Email**: jalilmuhammad2224@gmail.com
+
 
 
 
