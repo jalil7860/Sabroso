@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+  font-family: assistant;
+  src: url(./Assistant/Assistant-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.tag-line{
+  background-color: #5C2E92;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tag-line p{
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: .0725em;
+  padding-top: 2px;
+  margin-bottom: 0;
+}
+.nav-bar{
+  width: 100%;
+ padding: 20px 0 10px;
+}
+.nav-bar .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar .logo a img{
+    height: 70px;
+    width: 140px;
+}
+.menu{
+  position: relative;
+  margin-bottom: px;
+}
+.menu .left-menu{
+  position: absolute;
+    bottom: -15px;
+    width: auto;
+    font-size: 17px;
+    margin-bottom: 10px;
+  
+    left: 0;
+    padding: 0px 10px;
+}
+.menu .left-menu ul{
+  padding-left: 3px;
+}
+.menu .left-menu ul li{
+  display: inline;
+  list-style: none;
+  position: relative;
+  margin-right: 7px;
+}
+.menu .left-menu ul li a{
+  text-decoration: none;
+  font-size: 15.5px !important;
+  font-family: "Bebas Neue";
+  letter-spacing: 0.3px;
+    color: #5c2e92;
+    margin-bottom: 0;
+}
+.menu .left-menu ul li::after{
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #5C2E92;
+  left : 0;
+  bottom: -2px;
+  transition: .3s;
+}
+.menu .left-menu ul li:hover::after{
+  width: 100%;
+}
+  .menu .right-menu{
+    position: absolute;
+    bottom: -5px;
+    width: auto;
+    color: #5C2E92;
+    right: 0;
+    padding: 0px 10px;
+  }
+ .menu .right-menu ul li{
+  display: inline;
+  margin: 7px;
+  position: relative;
+  list-style: none;
+ }
+ .menu .right-menu ul li::after{
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #5C2E92;
+  right: 0;
+  bottom: -2px;
+  transition: .3s;
+ }
+ .menu .right-menu ul li:hover::after{
+  width: 100%;
+ }
+ .menu .right-menu ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15.5px !important;
+  font-family: "Bebas Neue";
+  letter-spacing: 0.3px;
+  color: #5C2E92;
+ }
+
+ .category{
+  position: relative;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F3F3F3;
+  padding: 10px 7px;
+
+ }
+ .category .category-menu{
+  display: flex;
+  align-items: center;
+ }
+ .category .category-menu ul{
+  align-items: center;
+  padding-left: 3px;
+ }
+ .category .category-menu ul li{
+  display: inline;
+  list-style: none;
+  margin: 10px;
+ }
+ .category .category-menu ul li a{
+  text-decoration: none;
+  letter-spacing: .0625em;
+  text-transform: uppercase;
+  font-size: 20px !important;
+  color: black !important;
+  font-family: "Bebas Neue";
+ }
+
+ .category .cart-items .cart img{
+  position: relative;
+  max-width: 40px;
+  height: auto;
+  margin-right: 10px;
+  z-index: 1;
+ }
+ .category .cart-items .cart span{
+  position: absolute;
+  z-index: 2;
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  color: white;
+  right: 33px;
+  top: 18px;
+  pointer-events: none;
+ }
+.slideshow{
+  position: relative; /* Fixed: removed extra margin */
+  width: 100%;
+  margin-bottom: 100px;
+  }    
+.carousel-item img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}  
+.carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #737373;
+  margin: 0px 4px;
+  transition: all .3 ease;
+  margin-top: 20px;
+}
+.carousel-indicators {
+  bottom: -50px;
+}
+.carousel-indicators .active {
+  transform: scale(1.8);
+}
+.featured-collection {
+  margin-top: 3rem;
+}
+      
+.featured-collection .collections{ 
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+.featured-collection .collections img{
+  height: 445px;
+  width: 445px;
+  transition: .6s;
+  cursor: pointer;
+}
+.featured-collection .featured-tagline{
+  margin-top: 10px;
+  width: 100%;
+  background-color: #5c2e92;
+  color: white;
+  text-align: center;
+}
+.featured-collection .featured-tagline p{
+  font-family: "bebas neue";
+  font-size: 33px;
+  line-height: 1.2;
+  font-weight: 500;
+  padding: 8px 5px 4px;
+}
+.video-section{
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 5px;
+}
+.video-section video{
+  width: 100%;
+}
+
+.spacing{
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.spacing div{
+  width: 100%;
+  border-top: 1px solid #F3F3F3;
+  height: 49px;
+  margin: 24px 0px 48px;
+  padding: 48px 15px 0px;
+}
+.social-links{
+  width: 100%;
+  height: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.social-links .social-icons{
+  width: 100%;
+}
+.social-links .social-icons ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  margin-bottom: 0px;
+}
+.social-links .social-icons ul li{
+  list-style: none;
+  margin-right: 15px;
+}
+.social-links .social-icons ul li i{
+  font-size: 1.8em;
+  cursor: pointer;
+  color: #5C2E92;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 11vw;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 5vh;
+}
+.footer-column span a{
+  font-size: .8rem;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: assistant;
+  cursor: pointer;
+}
+.footer-column span a:hover{
+  text-decoration: underline;
+}
+
+.footer-column > a {
+  color: #333;
+  text-decoration: none;
+  margin: 6px 0;
+  font-family: assistant;
+  letter-spacing: 1.1px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.copywrite-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.copywrite-section p{
+  font-family: assistant;
+  font-size: 12.8px;
+  color: #7B838A;
+  line-height: 10px;
+}
